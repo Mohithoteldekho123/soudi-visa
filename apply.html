@@ -218,7 +218,7 @@
                                 <label class="input-label fw-medium">Date Of Travel</label>
                                 <!-- <input type="date" placeholder="Date Of Travel" class="form-control shadow-none form-input"> -->
                                <div class="date-field position-relative">
-                                    <input type="date" class="form-control shadow-none form-input position-relative" id="start_date"  name="start_date" value="{{ old('start_date') }}" required>                            
+                                    <input type="date" class="form-control shadow-none form-input position-relative" id="start_date">                            
                                </div>
                             </div>
                         </div>
@@ -234,8 +234,16 @@
                                 <input type="text" placeholder="Occupation *" class="form-control shadow-none form-input">
                             </div>
                         </div>
-                       <div class="col-md-4">
-                       
+                       <!-- <div class="col-md-4">
+                       <input type="file">
+                       </div> -->
+                       <div class="col-12 text-center pt-3">
+                        <button class="custom-btn custom-btn-two fw-medium overflow-hidden position-relative">
+                            <span class="position-relative z-1">
+                                Continue to Payment 
+                                <i class="fa-solid fa-angles-right"></i>
+                            </span>
+                        </button>
                        </div>
                     </div>
                 </form>
@@ -390,6 +398,39 @@
             });
         });
     </script>
+
+      <script>
+         const wrapper = document.querySelector(".wrapper");
+         const fileName = document.querySelector(".file-name");
+         const defaultBtn = document.querySelector("#default-btn");
+         const customBtn = document.querySelector("#custom-btn");
+         const cancelBtn = document.querySelector("#cancel-btn i");
+         const img = document.querySelector("img");
+         let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+         function defaultBtnActive(){
+           defaultBtn.click();
+         }
+         defaultBtn.addEventListener("change", function(){
+           const file = this.files[0];
+           if(file){
+             const reader = new FileReader();
+             reader.onload = function(){
+               const result = reader.result;
+               img.src = result;
+               wrapper.classList.add("active");
+             }
+             cancelBtn.addEventListener("click", function(){
+               img.src = "";
+               wrapper.classList.remove("active");
+             })
+             reader.readAsDataURL(file);
+           }
+           if(this.value){
+             let valueStore = this.value.match(regExp);
+             fileName.textContent = valueStore;
+           }
+         });
+      </script>
 
 </body>
 </html>
