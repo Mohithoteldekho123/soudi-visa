@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- favicon  -->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/index/logo2.png"> -->
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css">
+     <!-- swiper css  -->
+     <link rel="stylesheet" href="assets/libs/swiperjs/css/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- scroll to top  -->
+    <a href="#" class="text-decoration-none scrollto-top d-flex align-items-center justify-content-center rounded-circle position-fixed">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <!-- whatsapp button  -->
+    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center text-decoration-none whatsapp position-fixed">
+        <img src="assets/img/whatsapp.svg" alt="whatsapp img" class="h-100 w-100 img-fluid">
+    </a>
+
+
+    <!-- navbar start  -->
+    <nav class="navbar sticky-top py-0 navbar-expand-lg flex-column align-items-start navbar-dark bg-dark container-fluid" aria-label="Offcanvas navbar large" id="navbar">
+        <div class="topbar w-100 py-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <div class="d-inline-flex align-items-center justify-content-center">
+                            <a href="javascript:;" class="d-inline-flex align-items-center rounded-1 justify-content-center trust-logo">
+                                <img src="assets/img/ratinglogo.png" alt="trust logo"  class="h-100 w-100 img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <a class="navbar-brand m-0 nav-logo d-inline-flex align-items-center justify-content-center" href="index.html">
+                            <img src="assets/img/logo.png" alt="logo" class="h-100 img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="call-mail  d-flex align-items-center gap-3">
+                            <a href="tel:+91123-456-7890" class="call-link fw-normal text-decoration-none d-flex align-items-center">
+                                <span class="call-icon  d-flex align-items-center justify-content-center rounded-circle">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                +91123-456-7890
+                            </a>
+                            <a href="mailto:name@gmail.com" class="call-link fw-normal text-decoration-none d-flex align-items-center">
+                                <span class="call-icon  d-flex align-items-center justify-content-center rounded-circle">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                name@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav w-100 ">
+            <div class="container">
+              <!-- <a class="navbar-brand nav-logo" href="javascript:;">
+                <img src="assets/img/logo.png" alt="logo" class="h-100 w-100 img-fluid">
+              </a> -->
+              <div class="row align-items-center justify-content-between">
+                <div class="col-auto d-lg-none d-block">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <div class="col">
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                          <li class="nav-item navbar-item">
+                            <a class="nav-link navbar-link fw-medium position-relative px-0 active" aria-current="page" href="javascript:;">Home</a>
+                          </li>
+                          <li class="nav-item navbar-item">
+                            <a class="nav-link navbar-link fw-medium position-relative px-0" href="javascript:;">Saudi Arabia Evisa Type</a>
+                          </li>
+                          <li class="nav-item navbar-item">
+                              <a class="nav-link navbar-link fw-medium position-relative px-0" href="javascript:;">Fees</a>
+                          </li>
+                          <li class="nav-item navbar-item">
+                              <a class="nav-link navbar-link fw-medium position-relative px-0" href="javascript:;">Umrah Packages</a>
+                          </li>
+                          <li class="nav-item navbar-item">
+                              <a class="nav-link navbar-link fw-medium position-relative px-0" href="apply.html">Evisa Application</a>
+                          </li>
+                          <li class="nav-item navbar-item">
+                              <a class="nav-link navbar-link fw-medium position-relative px-0" href="javascript:;">Payment</a>
+                          </li>
+                          <li class="nav-item navbar-item">
+                              <a class="nav-link navbar-link fw-medium position-relative px-0" href="javascript:;"> Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button class="custom-btn fw-medium border-0 nav-btn overflow-hidden position-relative">
+                        <span class="position-relative z-1">
+                            APPLY ONLINE
+                        </span>
+                    </button>
+                </div>
+              </div>
+             
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start  -->
+    <!-- <div class="container-fluid hero-section">
+        <div class="container h-100">
+            <div class="row align-items-center h-100 ">
+                <div class="col-10 mx-auto">
+                    <div class="form-card rounded-3 overflow-hidden">
+                        <div class="row g-3">
+                            <div class="col-12 text-center pb-4">
+                                <div class="form-heading d-inline-flex position-relative">
+                                    <h4>Apply Saudi Visa</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-data">
+                                    <label for="countery" class="label-form fw-semibold">I am a Citizen of</label>
+                                    <select id="countery" class="form-select select-box shadow-none border-0" aria-label="Default select example">
+                                        <option selected>Select Country</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-data">
+                                    <label for="countery" class="label-form fw-semibold">I am a Citizen of</label>
+                                    <select id="countery" class="form-select select-box shadow-none border-0" aria-label="Default select example">
+                                        <option selected>Select countery</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- hero section end -->
+
+    <!-- hero section two start  -->
+    <section class="container-fluid hero-section-two px-0 position-relative">
+        <!-- <div class="container">
+            <div class="row">
+                
+            </div>
+        </div> -->
+        <div class="swiper mySwiper h-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position-relative slider slider-one">
+                    <div class="container h-100">
+                        <div class="row position-relative z-1 h-100 align-items-center">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12 hero-heading text-center">
+                                        We Provide soudi visa <span>hero-para</span>
+                                    </div>
+                                    <div class="col-12 hero-para text-center">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet enim labore et qui aliquam? Inventore expedita veniam ex alias vitae, distinctio eveniet, suscipit quasi laborum sapiente earum blanditiis velit numquam.
+                                    </div>
+                                    <div class="col-12 mt-4 text-center">
+                                        <a href="" class="custom-btn fw-medium border-0 overflow-hidden position-relative text-decoration-none">
+                                            <span class="position-relative z-1">
+                                                APPLY ONLINE
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide position-relative slider slider-two"> 
+                    <div class="container h-100">
+                        <div class="row position-relative z-1 h-100 align-items-center">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12 hero-heading text-center">
+                                        We Provide soudi visa <span>hero-para</span>
+                                    </div>
+                                    <div class="col-12 hero-para text-center">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet enim labore et qui aliquam? Inventore expedita veniam ex alias vitae, distinctio eveniet, suscipit quasi laborum sapiente earum blanditiis velit numquam.
+                                    </div>
+                                    <div class="col-12 mt-4 text-center">
+                                        <a href="" class="custom-btn fw-medium border-0 overflow-hidden position-relative text-decoration-none">
+                                            <span class="position-relative z-1">
+                                                APPLY ONLINE
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide position-relative slider slider-three"> 
+                    <div class="container h-100">
+                        <div class="row position-relative z-1 h-100 align-items-center">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12 hero-heading text-center">
+                                        We Provide soudi visa <span>hero-para</span>
+                                    </div>
+                                    <div class="col-12 hero-para text-center">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet enim labore et qui aliquam? Inventore expedita veniam ex alias vitae, distinctio eveniet, suscipit quasi laborum sapiente earum blanditiis velit numquam.
+                                    </div>
+                                    <div class="col-12 mt-4 text-center">
+                                        <a href="" class="custom-btn fw-medium border-0 overflow-hidden position-relative text-decoration-none">
+                                            <span class="position-relative z-1">
+                                                APPLY ONLINE
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide position-relative slider slider-four">
+                    <div class="container h-100">
+                        <div class="row position-relative z-1 h-100 align-items-center">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12 hero-heading text-center">
+                                        We Provide soudi visa <span>hero-para</span>
+                                    </div>
+                                    <div class="col-12 hero-para text-center">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet enim labore et qui aliquam? Inventore expedita veniam ex alias vitae, distinctio eveniet, suscipit quasi laborum sapiente earum blanditiis velit numquam.
+                                    </div>
+                                    <div class="col-12 mt-4 text-center">
+                                        <a href="" class="custom-btn fw-medium border-0 overflow-hidden position-relative text-decoration-none">
+                                            <span class="position-relative z-1">
+                                                APPLY ONLINE
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="review-section rounded-3 position-absolute bg-white z-2">
+            <div class="row">
+                <div class=" col-12 fw-semibold">
+                    <div class="review-heading text-center">
+                        Customer Reviews
+                    </div>
+                </div>
+                <div class=" col-12 fw-semibold mt-2">
+                    <a href="javascript:;" class="text-decoration-none review-title justify-content-center fw-normal d-flex align-items-center ">
+                        see our <b class="mx-1">100</b> review on 
+                        <span class="trustpilot-logo d-flex align-items-center justify-content-center">
+                            <img src="assets/img/trustpilot.svg" alt="trustpilot" class="h-100 w-100 img-fluid">
+                        </span> 
+                    </a>
+                </div>
+                <div class="col-12 mt-2">
+                    <div class="bg-light hero-testimonal border rounded-2 pb-0 text-center">
+                        <div class="swiper mySwiper testimonal">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div>
+                                    <div class="user-name">
+                                        user name
+                                    </div>
+                                    <p class="testimonal-para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde porro deleniti fugiat, at doloremque nihil modi quia nobis? Placeat dignissimos hic distinctio harum neque voluptatibus ullam sed laudantium tempora!
+                                    </p>
+                                    <div class="testimonal-footer border-top d-flex align-items-center justify-content-between">
+                                        <div class="star-rating">
+                                            <img src="assets/img/5-star.png" alt="star" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        <div class="testimonal-date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            12 Fabuary, 2024
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div>
+                                    <div class="user-name">
+                                        user name
+                                    </div>
+                                    <p class="testimonal-para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde porro deleniti fugiat, at doloremque nihil modi quia nobis? Placeat dignissimos hic distinctio harum neque voluptatibus ullam sed laudantium tempora!
+                                    </p>
+                                    <div class="testimonal-footer border-top d-flex align-items-center justify-content-between">
+                                        <div class="star-rating">
+                                            <img src="assets/img/5-star.png" alt="star" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        <div class="testimonal-date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            12 Fabuary, 2024
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div>
+                                    <div class="user-name">
+                                        user name
+                                    </div>
+                                    <p class="testimonal-para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde porro deleniti fugiat, at doloremque nihil modi quia nobis? Placeat dignissimos hic distinctio harum neque voluptatibus ullam sed laudantium tempora!
+                                    </p>
+                                    <div class="testimonal-footer border-top d-flex align-items-center justify-content-between">
+                                        <div class="star-rating">
+                                            <img src="assets/img/5-star.png" alt="star" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        <div class="testimonal-date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            12 Fabuary, 2024
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div>
+                                    <div class="user-name">
+                                        user name
+                                    </div>
+                                    <p class="testimonal-para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde porro deleniti fugiat, at doloremque nihil modi quia nobis? Placeat dignissimos hic distinctio harum neque voluptatibus ullam sed laudantium tempora!
+                                    </p>
+                                    <div class="testimonal-footer border-top d-flex align-items-center justify-content-between">
+                                        <div class="star-rating">
+                                            <img src="assets/img/5-star.png" alt="star" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        <div class="testimonal-date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            12 Fabuary, 2024
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div>
+                                    <div class="user-name">
+                                        user name
+                                    </div>
+                                    <p class="testimonal-para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde porro deleniti fugiat, at doloremque nihil modi quia nobis? Placeat dignissimos hic distinctio harum neque voluptatibus ullam sed laudantium tempora!
+                                    </p>
+                                    <div class="testimonal-footer border-top d-flex align-items-center justify-content-between">
+                                        <div class="star-rating">
+                                            <img src="assets/img/5-star.png" alt="star" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        <div class="testimonal-date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            12 Fabuary, 2024
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div>
+                                    <div class="user-name">
+                                        user name
+                                    </div>
+                                    <p class="testimonal-para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde porro deleniti fugiat, at doloremque nihil modi quia nobis? Placeat dignissimos hic distinctio harum neque voluptatibus ullam sed laudantium tempora!
+                                    </p>
+                                    <div class="testimonal-footer border-top d-flex align-items-center justify-content-between">
+                                        <div class="star-rating">
+                                            <img src="assets/img/5-star.png" alt="star" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        <div class="testimonal-date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            12 Fabuary, 2024
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section two end  -->
+
+    <!-- hero sign up cta section start  -->
+    <section class="hero-signup-cta z-3 position-relative container-fluid">
+        <div class="container">
+            <div class="content-wrapper rounded-2">
+                <div class="row">
+                <div class="col-lg-3">
+                    <div class="step-wrapper d-flex align-items-center">
+                        <div class="number">
+                            <h4 class="heading-04 m-0">
+                                01
+                            </h4>
+                        </div>
+                        <p class="copy-02 m-0">
+                            Fill the application
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-wrapper d-flex align-items-center">
+                        <div class="number">
+                            <h4 class="heading-04 m-0">
+                                02
+                            </h4>
+                        </div>
+                        <p class="copy-02 m-0">
+                            Pay the Visa fee
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-wrapper d-flex align-items-center">
+                        <div class="number">
+                            <h4 class="heading-04 m-0">
+                                03
+                            </h4>
+                        </div>
+                        <p class="copy-02 m-0">
+                            Get your online Visa
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-wrapper d-flex align-items-center">
+                        <a href="" class="custom-btn custom-btn-two custom-btn-three fw-medium text-decoration-none overflow-hidden position-relative">
+                            <span class="position-relative z-1">
+                                APPLY ONLINE
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero sign up cta section end -->
+
+    <!-- step to apply section start  -->
+    <section class="container-fluid gap-section step-section bg-light pt-4">
+        <div class="container">
+            <div class="heading-section">
+                <div class="heading fw-bold text-center">Application For Saudi Visa</div>
+                <div class="mx-auto heading-line position-relative "></div>
+                <div class="text-center sub-heading">The Fast & Secure Way To Get Your Visa</div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-3">
+                    <div class="step-card rounded-3 shadow position-relative overflow-hidden">
+                        <div class="step-count position-absolute rounded-5 d-flex align-items-center justify-content-center">
+                            1
+                        </div>
+                        <div class="step-img d-flex align-items-center justify-content-center bg-white shadow rounded-circle mx-auto">
+                           <img src="assets/img/applyonline.svg" alt="apply online" class="h-100 w-100 img-fluid">
+                        </div>
+                        <div class="stepcard-heading text-center">
+                            Apply Online
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-card rounded-3 shadow position-relative overflow-hidden">
+                        <div class="step-count position-absolute rounded-5 d-flex align-items-center justify-content-center">
+                            2
+                        </div>
+                        <div class="step-img d-flex align-items-center justify-content-center bg-white shadow rounded-circle mx-auto">
+                           <img src="assets/img/uploadducoment.svg" alt="upload ducoment" class="h-100 w-100 img-fluid">
+                        </div>
+                        <div class="stepcard-heading text-center">
+                            Upload Docoument
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-card rounded-3 shadow position-relative overflow-hidden">
+                        <div class="step-count position-absolute rounded-5 d-flex align-items-center justify-content-center">
+                            3
+                        </div>
+                        <div class="step-img d-flex align-items-center justify-content-center bg-white shadow rounded-circle mx-auto">
+                           <img src="assets/img/payonline.svg" alt="Pay online" class="h-100 w-100 img-fluid">
+                        </div>
+                        <div class="stepcard-heading text-center">
+                            Pay Online
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-card rounded-3 shadow position-relative overflow-hidden">
+                        <div class="step-count position-absolute rounded-5 d-flex align-items-center justify-content-center">
+                            4
+                        </div>
+                        <div class="step-img d-flex align-items-center justify-content-center bg-white shadow rounded-circle mx-auto">
+                           <img src="assets/img/visa.svg" alt="Get your visa" class="h-100 w-100 img-fluid">
+                        </div>
+                        <div class="stepcard-heading text-center">
+                            Get Your Visa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- step to apply section end -->
+
+    <!-- about us section  -->
+    <section class="container-fluid gap-section about-section py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-img position-relative rounded-1 overflow-hidden">
+                        <img src="assets/img/about-img.jpg" alt="about us" class="h-100 w-100 img-fluid object-fit-cover">
+                        <div class="yearof-experience position-absolute bg-white rounded-2 shadow d-flex align-items-center">
+                            <span class="trophy-icon ">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div class="years fw-bold">
+                                100000+ 
+                            </div>
+                            <div class="year-title">
+                                Customer 
+                                <br>
+                                Globallay
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100">
+                        <div class="heading-section">
+                            <div class="heading fw-bold textcenter">Saudi Arabia Visa</div>
+                            <div class=" heading-line position-relative "></div>
+                        </div>
+                        <p class="about-para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis incidunt cum sunt eligendi enim amet hic harum! Itaque velit ullam maxime omnis adipisci beatae accusamus eligendi eum dolore tenetur fuga, sed alias ex similique maiores, praesentium tempora aliquam culpa aut?
+                        </p>
+                        <p class="about-para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis incidunt cum sunt eligendi enim amet hic harum! Itaque velit ullam maxime omnis adipisci beatae accusamus eligendi eum dolore tenetur fuga, sed alias ex similique maiores, praesentium tempora aliquam culpa aut?
+                        </p> 
+                        <div class="d-flex align-items-center mt-3">
+                            <a href="" class="custom-btn custom-btn-two fw-medium overflow-hidden position-relative">
+                                <span class="position-relative z-1">
+                                    APPLY ONLINE
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us end -->
+
+    <!-- requirement section start  -->
+    <section class="container-fluid gap-section requirement-section position-relative about-section">
+        <div class="container">
+            <div class="row position-relative z-1">
+                <div class="col-md-5">
+                    <div class="heading-section">
+                        <div class="heading fw-bold text-white">Need of visa for Saudi Arabia</div>
+                        <div class=" heading-line position-relative "></div>
+                    </div>
+                    <p class="about-para text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis incidunt cum sunt eligendi enim amet hic harum! Itaque velit ullam maxime omnis adipisci beatae accusamus eligendi eum dolore tenetur fuga, sed alias ex similique maiores, praesentium tempora aliquam culpa aut?
+                    </p>
+                    <p class="about-para text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis incidunt cum sunt eligendi enim amet hic harum! Itaque velit ullam maxime omnis adipisci beatae accusamus eligendi eum dolore tenetur fuga, sed alias ex similique maiores, praesentium tempora aliquam culpa aut?
+                    </p> 
+                    <div class="d-flex align-items-center mt-4">
+                        <a href="" class="custom-btn fw-medium border-0 overflow-hidden position-relative">
+                            <span class="position-relative z-1">
+                                APPLY ONLINE
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Your Email address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Your expected date of travelling and coming back from the country.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Current phone number.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-regular fa-address-card"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Full name including the middle name if any.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-regular fa-user"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Gender, nationality, and date of birth.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-solid fa-globe"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Name of the country in which living currently.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Name of the country you were born in.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-solid fa-passport"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    Passport number along with passport issue and expiry dates.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    The country name that issued your passport.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="requirement-card d-flex align-items-center border h-100">
+                                <span class="requirement-icon"> 
+                                    <i class="fa-regular fa-credit-card"></i>
+                                </span>
+                                <div class="requirement-title d-flex h-100 align-items-center w-100 justify-content-center">
+                                    A valid and secured payment method that could be either debit/ credit card or PayPal account.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- requirement section end -->
+
+    <!-- blog section start  -->
+    <div class="container-fluid blogsection gap-section  overflow-x-hidden">
+        <div class="container">
+            <div class="heading-section">
+                <div class="heading fw-bold text-center">Our Latest Blog</div>
+                <div class="mx-auto heading-line position-relative "></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="blogimg overflow-hidden rounded-2">
+                            <img src="assets/img/blog1.webp" alt="blog" class="h-100 w-100">
+                        </div>
+                        <div class="blogcontent">
+                            <div>
+                                <a href="bloginner.html" class="blogheading text-decoration-none "> UTT 2023 – Ultimate Table Tennis Tournament 2023 Influencer Marketing Campaign</a>
+                            </div>
+                            <div class="blogdetail">
+                                In the ever-evolving sports landscape, the Ultimate Table Tennis Tournament (UTT) has established itself as a premier event showcasing top-tier table tennis talent worldwide.
+                            </div>
+                            <div class="date d-flex align-items-center">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                July 15th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="blogimg overflow-hidden rounded-2">
+                            <img src="assets/img/blog2.webp" alt="blog" class="h-100 w-100">
+                        </div>
+                        <div class="blogcontent">
+                            <div>
+                                <a href="bloginner.html" class="blogheading text-decoration-none ">Mazaya Foods’ Influencer Collaboration – A Flavorful Journey With InfluencerHai</a>
+                            </div>
+                            <div class="blogdetail">
+                                Mazaya Foods, a renowned brand in the culinary world, recently embarked on an exciting influencer collaboration campaign using the cash payment system. Mazaya Foods.
+                            </div>
+                            <div class="date d-flex align-items-center">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                July 15th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="blogimg overflow-hidden rounded-2">
+                            <img src="assets/img/blog3.webp" alt="blog" class="h-100 w-100">
+                        </div>
+                        <div class="blogcontent">
+                            <div>
+                                <a href="bloginner.html" class="blogheading text-decoration-none ">Astro Yogendra’s Influencer Collaboration With InfluencerHai</a>
+                            </div>
+                            <div class="blogdetail">
+                                Astro Yogendra has emerged as a reputable brand known for its insightful guidance and expertise in astrology. Recently, Astro Yogendra embarked on an influencer...
+                            </div>
+                            <div class="date d-flex align-items-center">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                July 15th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog section end -->
+
+    <!-- why choose us section start  -->
+    <section class="container-fluid gap-section whychoose-us-section pb-md-3">
+        <div class="container">
+            <div class="heading-section">
+                <div class="heading fw-bold text-center">Why Choose Us</div>
+                <div class="mx-auto heading-line position-relative "></div>
+            </div>
+            <div class="row mt-4 pt-2">
+                <div class="col-lg-3">
+                    <div class="choose-card position-relative h-100 overflow-hidden rounded-2 ">
+                        <span class="choose-icon position-relative rounded-circle shadow-sm z-1 d-flex align-items-center justify-content-center mx-auto">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                        <div class="choose-heading text-center">
+                            <h4 class="m-0">Regular and Express Visa Services available.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="choose-card position-relative h-100 overflow-hidden rounded-2 ">
+                        <span class="choose-icon position-relative rounded-circle shadow-sm z-1 d-flex align-items-center justify-content-center mx-auto">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                        <div class="choose-heading text-center">
+                            <h4 class="m-0">
+                                10 years of Experience in Saudi Visa services
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="choose-card position-relative h-100 overflow-hidden rounded-2 ">
+                        <span class="choose-icon position-relative rounded-circle shadow-sm z-1 d-flex align-items-center justify-content-center mx-auto">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                        <div class="choose-heading text-center">
+                            <h4 class="m-0">Expertise in managing more than +35000 visa
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="choose-card position-relative h-100 overflow-hidden rounded-2 ">
+                        <span class="choose-icon position-relative rounded-circle shadow-sm z-1 d-flex align-items-center justify-content-center mx-auto">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                        <div class="choose-heading text-center">
+                            <h4 class="m-0">Cost Effective
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why choose us section end -->
+
+    <!-- footer start  -->
+    <footer class="container-fluid footer-section gap-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-logo">
+                        <img src="assets/img/logo.png" alt="logo" class="h-100 w-100 img-fluid">
+                    </div>
+                    <p class="footer-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vitae eos eveniet similique adipisci a.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-heading fw-semibold">
+                        Services
+                    </div>
+                    <ul class="footer-list list-unstyled">
+                        <li><a href="visa-requirement.html" class="text-decoration-none footer-link">Visa Requirement</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none footer-link">Visa Policy</a></li>
+                        <li><a href="blog.html" class="text-decoration-none footer-link">Blog</a></li>
+                        <li><a href="faq.html" class="text-decoration-none footer-link">Faq</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-heading fw-semibold">
+                        Usefull Link
+                    </div>
+                    <ul class="footer-list list-unstyled">
+                        <li><a href="javascript:;" class="text-decoration-none footer-link">Privacy Policy</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none footer-link">Cookie Policy</a></li>
+                        <li><a href="javascript:;" class="text-decoration-none footer-link">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-heading fw-semibold">
+                       Get In Touch
+                    </div>
+                    <ul class="footer-list list-unstyled">
+                        <li>
+                            <a href="javascript:;" class="text-decoration-none footer-link">
+                                <i class="fa-solid fa-phone"></i>
+                                +91-123456789
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="text-decoration-none footer-link">
+                                <i class="fa-regular fa-envelope"></i>
+                                demo@gmail.com
+                            </a>
+                        </li>
+                        <li class="footer-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                                19,20 tower , vaishali nagar , jaipur
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row payment-main align-items-center justify-content-between mt-4">
+                <div class="col">
+                   <div class="d-flex align-items-center">
+                        <h4 class="mb-0 me-4">Pay Safely With Us!</h4>
+                        <ul class="pay-list list-unstyled d-flex align-items-center m-0">
+                            <li class="pay-img"><img src="assets/img/pay1.svg" alt="payment" class="h-100 w-100 img-fluid"></li>
+                            <li class="pay-img"><img src="assets/img/pay2.svg" alt="payment" class="h-100 w-100 img-fluid"></li>
+                            <li class="pay-img"><img src="assets/img/pay3.svg" alt="payment" class="h-100 w-100 img-fluid"></li>
+                            <li class="pay-img"><img src="assets/img/pay4.svg" alt="payment" class="h-100 w-100 img-fluid"></li>
+                        </ul>
+                   </div>
+
+                </div>
+                <div class="col-auto">
+                    <ul class="d-flex align-items-center social-list list-unstyled">
+                        <li>
+                            <a href="#" class="social-icon d-flex align-items-center justify-content-center overflow-hidden text-decoration-none position-relative rounded-circle facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter social-icon d-flex align-items-center justify-content-center overflow-hidden text-decoration-none position-relative rounded-circle">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram social-icon d-flex align-items-center justify-content-center overflow-hidden text-decoration-none position-relative rounded-circle">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="google social-icon d-flex align-items-center justify-content-center overflow-hidden text-decoration-none position-relative rounded-circle">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copyright section start  -->
+    <section class="container-fluid copyright-section">
+        <div class="container">
+           <p class="m-0 text-center fw-medium">
+                @ <script>document.write(new Date().getFullYear())</script> Saudi-visa. All Right Reserved A project by Travejar
+           </p>
+        </div>
+    </section>
+    <!-- copyright section end -->
+
+
+    <!-- bootstrap js  -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="assets/js/main.js"></script>
+    <!-- swiper js  -->
+    <script src="assets/libs/swiperjs/js/swiper-bundle.min.js"></script>
+
+    <!-- slider  -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".testimonal", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

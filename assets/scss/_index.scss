@@ -1,0 +1,1074 @@
+@charset "UTF-8";
+
+// page heading section start 
+.page-heading-section {
+    background: url(../img/visa-requirement.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($black, 0.5);
+    }
+    & .page-heading {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: normal;
+        color: $white;
+    }
+}
+// page heading section end
+
+// breadcrumb section start 
+.breadcrumb-section {
+    padding-block: 12px;
+    & .breadcrumb {
+        margin-bottom: 0;
+    }
+    & .breadcrumb-item {
+        font-size: 16px;
+        font-weight: 500;
+        & a {
+            color: $theme1;
+        }
+    }
+}
+// breadcrumb section end
+
+
+// navbar start 
+.navbar {
+    z-index: 20;
+    & .topbar {
+        background-color: lighten($black, 25);
+       
+        & .trust-logo {
+            height: 55px;
+            background-color: $white;
+        }
+        & .call-mail {
+            & .call-link {
+                color: $white;
+                gap: 5px;
+                transition: all 0.3s ease-in-out;
+                line-height: normal;
+                & .call-icon {
+                    background-color: $white;
+                    height: 25px;
+                    width: 25px;
+                    color: $theme1;
+                    font-size: 14px;
+                    transition: all 0.3s ease-in-out;
+                    & i {
+                        transition: all 0.1s ease-in-out;
+                    }
+                }
+                &:hover {
+                    // color: $theme1;
+                    & .call-icon {
+                        background-color: $theme1;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    & .bottom-nav {
+        padding: 12px  0;
+    }
+    & .nav-logo {
+        height: 55px;
+    }
+    & .navbar-nav {
+        gap: 29px;
+        & .navbar-item {
+            & .navbar-link {
+                font-size: 16px;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 1.4px;
+                    width: 100%;
+                    left: 0;
+                    bottom: 6px;
+                    background-color: $theme1;
+                    // background-color: $white;
+                    transform: scaleX(0);
+                    transform-origin: bottom right;
+                    transition: transform 0.3s ease-in-out;
+                }
+                &:hover {
+                    color: $theme1;
+                    &::before {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+        }
+    }
+    &.fixed-navbar {
+        animation: fixedAnim 1s forwards; 
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.06);
+        position: fixed;
+        top: 0;
+        z-index: 50;
+        & .topbar {
+            display: none;
+        }
+      }
+      @keyframes fixedAnim {
+        from {
+            top: -100px;
+        }
+        to {
+            top: 0;
+        }
+      }
+}
+.nav-btn {
+    animation: myanimation 7s infinite;
+    @keyframes myanimation {
+        0% {
+            background-color: $theme1;
+            color: $white;
+        }
+        25%{
+            background-color:$white;
+            color: $black;
+        }
+        50%{
+            background-color:$theme1;
+            color: $white;
+        }
+        75%{
+            background-color:$white;
+            color: $black;
+        }
+        100% {
+            background-color: $theme1;
+            color: $white;
+        }
+      }
+}
+// navbar end
+
+// hero section start 
+.hero-section {
+    background: url(../img/hero-banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    & .form-card {
+        background-color: rgba($white, 0.7);
+        padding: 20px;
+        & .form-heading {
+            background-color: $theme1;
+            padding: 4px 40px;
+            color: $white;
+            border-radius: 4px;
+            animation: swing ease-in-out 1s infinite alternate;
+            &::before {
+                content: '';
+                height: 50px;
+                width: 3px;
+                top: -50px;
+                left: 5%;
+                position: absolute;
+                background-color: $theme1;
+            }
+            &::after {
+                content: '';
+                height: 50px;
+                width: 3px;
+                top: -50px;
+                right: 5%;
+                position: absolute;
+                background-color: $theme1;
+            }
+            @keyframes swing {
+                0% { transform: rotate(3deg); }
+                100% { transform: rotate(-3deg); }
+            }
+        }
+        & .form-data {
+            & .label-form {
+                font-size: 19px;
+                margin-bottom: 4px;
+            }
+            & .select-box{
+                font-size: 15px;
+                font-weight: 500;
+                height: 40px;
+            }
+        }
+    }
+}
+// hero section end
+
+// hero section two start 
+.hero-section-two {
+    height: 500px;
+    & .slider {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($black, 0.5);
+        }
+    }
+    & .slider-one {
+        background: url(../img/slider1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    & .slider-two {
+        background: url(../img/slider2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    & .slider-three {
+        background: url(../img/slider3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    & .slider-four {
+        background: url(../img/slider4.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    & .hero-heading {
+        font-size: 40px;
+        font-weight: 700;
+        color: $white;
+        line-height: 42px;
+        // & span {
+        //     color: $theme2;
+        // }
+    }
+    & .hero-para {
+        font-size: 16px;
+        color: $white;
+        line-height: normal;
+        margin-top: 15px;
+    }
+}
+.review-section {
+    padding: 15px;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 450px;
+    & .review-heading {
+        font-size: 22px;
+        line-height: 24px;
+        // background-color: #00B67A;
+        color: $black;
+        padding-bottom: 5px;
+        border-radius: 4px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            width:60px;
+            transform: translateX(-50%);
+            background-color: $black;
+        }
+    }
+    & .review-title {
+        font-size: 15px;
+        color: lighten($black, 40);
+        & .trustpilot-logo {
+            width: 90px ;
+            margin-left: 4px;
+        }
+    }
+    & .hero-testimonal {
+        padding: 10px;
+        & .user-name {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        & .testimonal-para {
+            font-size: 15px;
+            margin-top: 8px;
+        }
+        & .testimonal-footer {
+            padding: 15px 3px;
+        }
+        & .star-rating {
+            width: 105px;
+        }
+        & .testimonal-date {
+            font-size: 14px;
+        }
+    }
+}
+// hero section two end
+
+// hero sign up cta section start
+.hero-signup-cta {
+    margin-top: -60px;
+    & .content-wrapper {
+        background-color: #fff;
+        -webkit-box-shadow: 0 .2rem 3rem 0 rgba(0,0,0,.1);
+        box-shadow: 0 .2rem 3rem 0 rgba(0,0,0,.1);
+        padding: 35px 60px;
+    }
+    & .step-wrapper {
+        & .number {
+            color: $theme1;
+            display: flex;
+            padding-right: 25px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                right: 10px;
+                bottom: 6px;
+                transform: rotate(45deg);
+                width: 5px;
+                height: 5px;
+                background-color: $theme1;
+            }
+        }
+        & .copy-02 {
+            font-size: 14px;
+            color: lighten($black, 40);
+        }
+    }
+}
+// hero sign up cta section end
+
+// step to apply section start 
+.step-section {
+    & .step-card {
+        padding: 25px 15px 15px;
+        border: 1px dashed $theme1;
+        &::before {
+            content: '';
+            position: absolute;
+            right: -26px;
+            top: -18px;
+            height: 60px;
+            width: 60px;
+            background-color: $theme1;
+            border-radius: 50%;
+        }
+        & .step-count {
+            right: 10px;
+            top: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $white;
+        }
+        
+        & .step-img {
+            height: 70px;
+            width: 70px;
+            padding: 18px;
+        }
+        & .stepcard-heading {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 12px;
+        }
+    }
+}
+// step to apply section end 
+
+
+// about us section start 
+.about-section {
+    & .about-img {
+        aspect-ratio: 6/4;
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-image: -webkit-linear-gradient(90deg, #ff3c00 -80%, rgba(33, 75, 224, 0) 64%);
+            background-image: -webkit-linear-gradient(90deg, #ff3c00 -80%, rgba(33, 75, 224, 0) 64%);
+        }
+    }
+    & .about-para {
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+    & .yearof-experience {
+        left: 15px;
+        top: 30px;
+        padding: 15px;
+        gap: 15px;
+        border: 1px dashed $theme1;
+        animation: updown-two 2.6s linear 0s infinite alternate;
+        & .trophy-icon {
+            color: $theme1;
+            font-size: 26px;
+        }
+        & .years {
+            font-size: 30px;
+            color: $theme2;
+        }
+        & .year-title {
+            font-size: 15px;
+            line-height: 22px;
+            color: lighten($black, 50);
+        }
+    }
+    @keyframes updown-two {
+        0% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+}
+// about us section end
+
+
+// requirement section start
+.requirement-section  {
+    background: url(../img/requirement-section.jpg) no-repeat;
+    background-size:  cover;
+    background-position: center;
+    padding-block: 40px;
+    &::before{
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgba($black, 0.8);
+    }
+    & .requirement-card {
+        border-radius: 3px;
+        & .requirement-icon {
+            font-size: 22px;
+            color: $theme1;
+            padding-inline: 12px;
+        }
+        & .requirement-title {
+            padding: 10px;
+            font-size: 16px;
+            color: $white;
+            border-left: 1px solid $white;
+        }
+    }
+}
+// requirement section end
+
+
+// why choose us section start
+.whychoose-us-section {
+    & .choose-card {
+        padding:  15px;
+        border: 1px solid #d4d9e6;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 0%;
+            background-color: $theme1;
+            background-image: url(../img/shape-1.png);
+            background-repeat: no-repeat;
+            background-position: center left;
+            content: "";
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            z-index: -1;
+        }
+        & .choose-icon {
+            background-color: $theme1;
+            height: 50px;
+            width: 50px;
+            color: $white;
+            font-size: 22px;
+            transition: all 0.3s ease-in-out;
+        }
+        & .choose-heading {
+            margin-top: 16px;
+            transition: all 0.3s ease-in-out;
+            & h1, h2 ,h3 ,h4 , h5 ,h6 ,p {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+            & .choose-heading {
+                color: $white;
+            }
+            & .choose-icon {
+                background-color: $white;
+                color: $theme1;
+            }
+        }
+    }
+}
+// why choose us section start
+
+
+// footer start 
+.footer-section {
+    // background-color: rgb(19, 19, 19);
+    background-color: $theme2;
+    padding-block: 50px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 400px;
+        background: url(../img/footershape.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    & .footer-logo {
+        width: 200px;
+    }
+    & .footer-para {
+        font-size: 16px;
+        color: $white;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    & .footer-heading {
+        font-size: 20px;
+        line-height: normal;
+        color: $white;
+        margin-bottom: 25px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px;
+            width: 40px;
+            background-color: $theme1;
+        }
+    }
+    & .footer-link {
+        font-size: 15px;
+        color: $white;
+        transition: all 0.3s ease-in-out;
+        line-height: normal;
+        &:hover {
+            color: $theme1;
+        }
+    }
+    & .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    & .payment-main {
+        & h4 {
+            color: $white;
+            font-size: 18px;
+        }
+        & .pay-list {
+            gap: 10px;
+            & .pay-img {
+                // width: 63px;
+                // height: 38px;
+            }
+        }
+    }
+    & .social-list {
+        gap: 15px;
+        & .social-icon {
+            height: 45px;
+            width: 45px;
+            font-size: 16px;
+            color: $white;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+            & i {
+                transition: all 0.3s ease-in-out;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: $theme1;
+                z-index: -1;
+                transition: all 0.3s ease-in-out;
+                border-radius: 50%;
+            }
+            &:hover {
+               
+                & i {
+                    transform: scale(1.8);
+                    color: $theme1;     
+                }
+                &::before {
+                    transform: scale(0);
+                }
+            }
+        }
+    }
+}
+// footer end
+
+// copy right section start 
+.copyright-section {
+    // background-color: rgb(28, 29, 32);
+    background: #0d152d;
+    padding-block: 20px;
+    border-top: 1px dashed $theme1;
+    & p {
+        color: $white;
+    }
+}
+// copy right section end
+
+
+// ******* visa requirement page start *******
+
+// visa requirement content section start
+.content-section {
+    & .content-card-main {
+        padding: 20px;
+        & .show-few-lines {
+            display: -webkit-box;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
+        }
+        & .content-heading {
+            font-size: 21px;
+            font-weight: 500;
+        }
+        & .read-more-btn {
+            font-size: 16px;
+            color: $white;
+            background-color: $theme1;
+            padding: 6px 20px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 3px;
+            text-decoration: none;
+            z-index: 1;
+        }
+    }
+}
+// visa requirement content section end
+
+// ******* visa requirement page end *******
+
+
+// ******* faq page start *******
+
+// faq page start
+.faq-section {
+    & .faq-inner {
+        gap: 13px;
+        & .accordion-button {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            transition: all 0.3s ease-in-out;
+            &::after {
+                content: "";
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 15px;
+                width: 13px;
+                background: url(../img/rightarrow.svg) no-repeat;
+                background-size: contain;
+                background-position: center;
+                transition: all 0.3s ease-in-out;
+            }
+            &:not(.collapsed) {
+                background-color: $theme1;
+                color: $white;
+                &::after {
+                    transform: translateY(-50%) rotate(90deg);
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+// faq page end 
+
+// ******* faq page end *******
+
+
+// ******* blog page start *******
+
+// blog section start 
+.blogsection {
+    & .blogcard {
+        padding: 7px 7px 0 ;
+        border: 1px solid lighten($black, 85);
+        border-radius: 5px;
+        position: relative;
+        & .blogimg {
+            aspect-ratio: 5/3;
+            & img {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .blogcontent {
+            padding: 15px 5px;
+            & .date {
+                color:lighten($black, 30);
+                margin-top: 9px;
+                font-weight: 400;
+                font-size: 14px;
+                gap: 7px;
+                & .calendaricon {
+                    font-size: 15px;
+                    color: $theme1;
+                }
+            }
+            & .blogheading {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 6px;
+                font-weight: 700;
+                color: $theme2;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                transition: all 0.3s ease-in-out;
+                text-align: start;
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                    pointer-events: auto;
+                    content: "";
+                    background-color: rgba($black, 0);
+                }
+            }
+            & .blogdetail {
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                line-height: 20px;
+                font-size: 14px;
+                text-align: start;
+            }
+        }
+        &:hover {
+            & .blogimg {
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+            & .blogheading {
+                color: $theme1;
+            }
+        }
+    }
+}
+// blog section end
+
+// blog innere page start 
+.blogInnerpage {
+    & .blogcardmain {
+        padding: 20px;
+        border: 1px solid lighten($black, 85);
+        & .blogimg {
+            aspect-ratio: 6/3;
+        }
+        & .blogheading {
+            font-weight: 600;
+            color: $theme2;
+            font-size: 40px;
+            line-height: 44px;
+            margin-top: 14px;
+        }
+        & .date {
+            font-size: 14px;
+            font-weight: 500;
+            color: lighten($black, 40);
+            line-height: normal;
+            & i {
+                color: $theme1;
+                font-size: 15px;
+                margin-right: 2px;
+            }
+        }
+        & .socialmedia {
+            gap: 15px;
+            & .socialicon {
+                height: 35px;
+                width: 35px;
+                padding: 10px;
+                background-color: darken($primary, 5);
+                color: $white;
+                &.twitter {
+                    background-color: lighten($primary, 10);
+                }
+                &.whatsapp {
+                    background-color: lighten($success, 15);
+                }
+                &.pinterest {
+                    background-color: lighten($danger, 0);
+                }
+                &:hover {
+                    & i {
+                        animation: toBottomFromTop 1s forwards;
+                    }
+                }
+                @keyframes toBottomFromTop {
+                    49% {
+                        -webkit-transform: translateY(-100%);
+                        transform: translateY(-100%);
+                    }
+                    50% {
+                        opacity: 0;
+                        -webkit-transform: translateY(100%);
+                        transform: translateY(100%);
+                    }
+                    51% {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        & .blogdetail {
+            font-size: 16px;
+            margin-top: 10px;
+            line-height: 24px;
+            color: lighten($black, 20);
+            font-weight: 400;
+            &.parafirst {
+                margin-top: 45x;
+            }
+            & .userlink {
+                color: $theme1;
+                font-weight: 600;
+            }
+        }
+        & .blogsubheading {
+            margin-top: 28px;
+            font-size: 25px;
+            font-weight: 600;
+            color: $theme2;
+        }
+    }
+    & .sidebar{
+        top: 70px;
+        padding: 18px;
+        z-index: 1;
+        border: 1px solid lighten($black, 85);
+        & .searchmain {
+            height: 40px;
+            & .searchinput {
+                color: lighten($black, 40);
+                font-size: 14px;
+                &::placeholder {
+                    color: lighten($black, 40);
+                    font-size: 14px;
+                }
+            }
+            & .searchbtn {
+                background-color: $theme1;
+                border: 1px solid $theme1;
+                padding: 11px;
+                color: $white;
+            }
+        }
+        & .cardHeading{
+            font-size: 25px;
+            font-weight: 700;
+            color: $theme2;
+        }
+        & .CardBox{
+            transition: all .3s ease-in-out;
+            padding: 8px;
+            &:hover{
+                & .cardLinkanc{
+                    color: $theme1 !important;
+                }
+                & .cardLinkancSecond{
+                    color: $theme1 !important;
+                }
+                & .CardImg{
+                    & img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            & .CardImg{
+                height: 70px;
+                width: 85px;
+                transition: all .3s ease-in-out;
+                overflow: hidden;
+                & img{
+                    transition: all .3s ease-in-out;
+                }
+            }
+            & .cardLink{
+                & .date {
+                    color: lighten($black, 30);
+                    margin-bottom: 6px;
+                    gap:6px;
+                    font-size: 14px;
+                    & .dateicon {
+                        font-size: 15px;
+                        color: $theme1;
+                    }
+                }
+                & .cardLinkanc{
+                    font-size: 14px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    transition: all .3s ease-in-out;
+                    color: $theme2;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+// blog innere page end
+
+// ******* blog page end *******
+
+
+// ******* apply page start *******
+
+.form-section {
+    & .form-main {
+        padding: 20px;
+        & .form-heading {
+            font-size: 24px;
+            color:$black;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -2px;
+                height: 3px;
+                width: 35px;
+                border-radius: 8px;
+                background-color: $theme1;
+            }
+        }
+        & .input-field {
+            & .input-label {
+                margin-bottom: 6px;
+                font-size: 14px;
+                margin-left: 2px;
+            }
+            & .form-input {
+                height: 45px;
+                border-radius: 5px;
+                font-size: 15px;
+                &::placeholder {
+                    font-size: 15px;
+                }
+                &:focus {
+                    border-color: $theme1;
+                }
+            }
+		}
+        & input[type="date"]::-webkit-calendar-picker-indicator {
+            background: transparent;
+            bottom: 0;
+            color: transparent;
+            cursor: pointer;
+            height: auto;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: auto;
+            z-index: 2;
+        }
+        & .date-field {
+            &::before {
+                content: '';
+                font-weight: 400;
+                position: absolute;
+                right: 14px;
+                top: 13px;
+                height: 17px;
+                width: 14px;
+                background: url(../img/calendar.svg) no-repeat;
+                background-position: center;
+                background-size: contain;
+                z-index: 1;
+            }
+        }
+    }
+    & .select-input {
+        & .niceCountryInputMenu {
+            height: 100%;
+            border-color: lighten($black, 88) !important;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 8px;
+        }
+        & .niceCountryInputMenuFilter {
+            background-color: $white;
+            border-inline-color: lighten($black, 88) !important;
+        }
+        & .niceCountryInputMenuDropdownContent {
+            background-color: $white;
+            border-color: lighten($black, 88) !important;
+            border-top: 0;
+            & a {
+                height: 31px;
+
+                &:hover {
+                    background-color: $theme1 !important;
+                }
+            }
+        }
+    }
+}
+
+
+// ******* apply page end *******
+
+

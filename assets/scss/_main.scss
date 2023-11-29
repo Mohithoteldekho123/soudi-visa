@@ -1,0 +1,112 @@
+
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 2px;
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $theming1;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  // overflow: hidden auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+// common for all 
+.gap-section {
+  margin-top: 45px;
+}
+.gap-section-two {
+  margin-top: 40px;
+}
+
+// heading 
+.heading-section {
+  & .heading {
+    font-size: 38px;
+    color: $theme2;
+  }
+  & .heading-line {
+    width: 95px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: $theme1;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      height: 13px;
+      width: 13px;
+      border-radius: 50%;
+      border: 3px solid $theme1;
+      background-color: $white;
+      animation: headings 4s infinite;  
+    }
+    @keyframes headings {
+      0% {
+        left: 0;
+        opacity: 0;
+      }
+      25% {
+        left: 25%;
+        opacity: 1;
+      }
+      50% {
+        left: 50%;
+        opacity: 1;
+      }
+      75% {
+        left: 75%;
+        opacity: 1;
+      }
+      100% {
+        left: 100px;
+        opacity: 0;
+      }
+    }    
+  }
+  & .sub-heading {
+    font-size: 18px;
+    font-weight: 500;
+    color: lighten($black, 40);
+    margin-top: 5px;
+  }
+}
+
+// scroll to top 
+.scrollto-top {
+  height: 45px;
+  width: 45px;
+  background-color: $theme1;
+  right: 20px;
+  bottom: 40px;
+  z-index: 6;
+  color: $white;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $theme2;
+  }
+}
+
+// whatsap icon 
+.whatsapp {
+  width: 45px;
+  height: 45px;
+  right: 20px;
+  bottom: 120px;
+  z-index: 6;
+}

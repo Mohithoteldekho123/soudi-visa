@@ -1,0 +1,46 @@
+.custom-btn {
+    font-size: 16px;
+    color: $black;
+    background-color: $white;
+    padding: 6px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    text-decoration: none;
+    z-index: 1;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-color: $theme1;
+        transform: scaleY(0);
+        transform-origin: top bottom;
+        transition: transform 0.3s ease-in-out;
+        z-index: 0;
+    }
+    &:hover {
+        color: $white;
+        &::before {
+            transform: scaleY(1);
+            transform-origin: bottom top;
+        }
+    }
+    &.custom-btn-two {
+        background-color: $theme1;
+        color: $white;
+        border: 1px solid $theme1;
+        &::before{
+            background-color: $white;
+        }
+        &:hover {
+            color: $black;
+        }
+    }
+    &.custom-btn-three {
+        border-radius: 20px;
+        padding: 8px 36px;
+    }
+}
