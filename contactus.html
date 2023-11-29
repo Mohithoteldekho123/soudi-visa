@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact US</title>
     <!-- favicon  -->
     <!-- <link rel="icon" type="image/x-icon" href="assets/img/index/logo2.png"> -->
+    <!-- jquery  -->
+    <script src="assets/js/JQUERY.js"></script>
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <!-- bootstrap css  -->
@@ -14,6 +16,8 @@
     <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css">
      <!-- swiper css  -->
      <link rel="stylesheet" href="assets/libs/swiperjs/css/swiper-bundle.min.css">
+    <!-- select library  -->
+    <link rel="stylesheet" href="assets/libs/selectbox/css/niceCountryInput.css">
 </head>
 <body>
     <!-- scroll to top  -->
@@ -127,7 +131,7 @@
            <div class="d-flex h-100 align-items-center">
             <div class="row w-100">
                 <div class="col-12 page-heading text-center">
-                    Visa Requirements
+                    Contact Us
                 </div>
                 <div class="d-flex align-items-center justify-content-center mt-4">
                     <a href="" class="custom-btn fw-medium border-0 overflow-hidden position-relative text-decoration-none">
@@ -148,50 +152,112 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Library</li>
+                  <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                 </ol>
               </nav>
         </div>
     </section>
     <!-- breadcrumb section end -->
     
-    <!-- visa content section start  -->
-    <section class="container-fluid content-section gap-section-two">
+    <!-- apply section start  -->
+    <section class="container-fluid gap-section form-section contactus-page">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="content-card-main bg-light border rounded-2">
-                        <div class="content-heading border-bottom pb-2">
-                            Documents required:
-                        </div>
-
-                            <!-- <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
-                                <span id="dots">...</span>
-                                <span id="more">
-                                    erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-                                </span>
-                            </p> -->
-                            <div class="read_more_text show-few-lines mt-3">
-                                <p class=''>
-                                    Out of another, I get a lovely view of the bay and a little private wharf belonging to the estate. There is a beautiful shaded lane that runs down there from the house. I always fancy I see people walking in these numerous paths and arbors, but John has cautioned me not to give way to fancy in the least. He says that with my imaginative power and habit of story-making a nervous weakness like mine is sure to lead to all manner of excited fancies and that I ought to use my will and good sense to check the tendency.
-                                </p>
-                                <p class=''>
-                                    Out of another, I get a lovely view of the bay and a little private wharf belonging to the estate. There is a beautiful shaded lane that runs down there from the house. I always fancy I see people walking in these numerous paths and arbors, but John has cautioned me not to give way to fancy in the least. He says that with my imaginative power and habit of story-making a nervous weakness like mine is sure to lead to all manner of excited fancies and that I ought to use my will and good sense to check the tendency.
-                                </p>
+                <div class="col-lg-8">
+                    <div class="form-main bg-light rounded-3">
+                        <form action="#" class="bg-transparent">
+                            <div class="row g-4" >
+                                <div class="col-md-6">
+                                    <div class="input-field d-flex flex-column">
+                                        <label class="input-label fw-medium">Your Name</label>
+                                        <input type="text" placeholder="Enter Your Name" class="form-control shadow-none form-input">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-field d-flex flex-column">
+                                        <label class="input-label fw-medium">Email</label>
+                                        <input type="text" placeholder="Enter Email" class="form-control shadow-none form-input">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-field d-flex flex-column">
+                                        <label class="input-label fw-medium">Mobile Number</label>
+                                        <input type="tel" placeholder="Enter Mobile Number" class="form-control shadow-none form-input">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-field d-flex flex-column">
+                                        <label class="input-label fw-medium">Nationality</label>
+                                        <div class="form-input select-input">
+                                            <div class="niceCountryInputSelector bg-white z-2 position-relative h-100" data-selectedcountry="US" data-showspecial="false" data-showflags="true" data-i18nall="All selected"
+                                            data-i18nnofilter="No selection" data-i18nfilter="Filter" data-onchangecallback="onChangeCallback">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-field d-flex flex-column">
+                                        <label class="input-label fw-medium">Message</label>
+                                        <textarea name="" id="" cols="10" rows="5" class="form-control h-auto shadow-none form-input" placeholder="Your Message "></textarea>
+                                    </div>
+                                </div>
+                               <div class="col-12 text-center pt-3">
+                                <button class="custom-btn custom-btn-two fw-medium overflow-hidden position-relative">
+                                    <span class="position-relative z-1">
+                                       SUBMIT
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </span>
+                                </button>
+                               </div>
                             </div>
-                        <div class="d-flex align-items-center justify-content-end mt-3">
-                            <button onclick='readMore(this,event)' id="myBtn" class="read-more-btn border-0 fw-medium overflow-hidden position-relative">
-                                Read More
-                                <!-- <i class="fa-solid fa-chevron-down"></i> -->
-                            </button>
+                        </form>
+        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row gap-4">
+                        <div class="col-12">
+                            <div class="contact-card border rounded-2 d-flex align-items-center gap-3 position-relative">
+                                <span class="call-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </span>
+                                <div>
+                                    <div class="contact-card-heading fw-medium">Phone</div>
+                                    <a href="tel:+91-123-456-7890" class="text-decoration-none contact-card-title stretched-link">+91-1234567890</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-card border rounded-2 d-flex align-items-center gap-3 position-relative">
+                                <span class="call-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <div>
+                                    <div class="contact-card-heading fw-medium">Email </div>
+                                    <a href="mailto:demo@gmail.com" class="text-decoration-none contact-card-title stretched-link">Demo@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-card border rounded-2 d-flex align-items-center gap-3 position-relative">
+                                <span class="call-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <div>
+                                    <div class="contact-card-heading fw-medium">Address</div>
+                                    <a href="tel:+91-123-456-7890" class="text-decoration-none contact-card-title stretched-link">C-14 goutam marg , vaishali nagar jaipur</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="maps-main overflow-hidden rounded-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14230.694294695844!2d75.77162842789552!3d26.913852945054366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db40b6ed16f5f%3A0x902e85e7d6dc03fb!2sJai%20Mahal%20Palace%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1701259028126!5m2!1sen!2sin" style="border:0;" class="h-100 w-100 " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
-    <!-- visa content section end -->
+    <!-- apply content section end -->
 
     <!-- footer start  -->
     <footer class="container-fluid footer-section gap-section position-relative">
@@ -309,6 +375,8 @@
     <script src="assets/js/main.js"></script>
     <!-- swiper js  -->
     <script src="assets/libs/swiperjs/js/swiper-bundle.min.js"></script>
+     <!-- select library  -->
+     <script src="assets/libs/selectbox/js/niceCountryInput.js"></script>
 
     <script>
         function readMore(ele,eve){
@@ -323,5 +391,52 @@
             }
         }
     </script>
+
+    <script>
+        function onChangeCallback(ctr){
+            console.log("The country was changed: " + ctr);
+            //$("#selectionSpan").text(ctr);
+        }
+
+        $(document).ready(function () {
+            $(".niceCountryInputSelector").each(function(i,e){
+                new NiceCountryInput(e).init();
+            });
+        });
+    </script>
+
+      <script>
+         const wrapper = document.querySelector(".wrapper");
+         const fileName = document.querySelector(".file-name");
+         const defaultBtn = document.querySelector("#default-btn");
+         const customBtn = document.querySelector("#custom-btn");
+         const cancelBtn = document.querySelector("#cancel-btn i");
+         const img = document.querySelector("img");
+         let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+         function defaultBtnActive(){
+           defaultBtn.click();
+         }
+         defaultBtn.addEventListener("change", function(){
+           const file = this.files[0];
+           if(file){
+             const reader = new FileReader();
+             reader.onload = function(){
+               const result = reader.result;
+               img.src = result;
+               wrapper.classList.add("active");
+             }
+             cancelBtn.addEventListener("click", function(){
+               img.src = "";
+               wrapper.classList.remove("active");
+             })
+             reader.readAsDataURL(file);
+           }
+           if(this.value){
+             let valueStore = this.value.match(regExp);
+             fileName.textContent = valueStore;
+           }
+         });
+      </script>
+
 </body>
 </html>

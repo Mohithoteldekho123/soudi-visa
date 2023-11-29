@@ -999,7 +999,7 @@
             & .form-input {
                 height: 45px;
                 border-radius: 5px;
-                font-size: 15px;
+                font-size: 14px;
                 &::placeholder {
                     font-size: 15px;
                 }
@@ -1066,3 +1066,45 @@
     }
     
 }
+
+.contactus-page {
+    & .maps-main {
+        height: 350px;
+        margin-top: 30px;
+    }
+    & .contact-card {
+        padding: 12px;
+        & .call-icon {
+            height: 40px;
+            min-width: 40px;
+            max-width: 40px;
+            background-color: $theme1;
+            color: $white;
+            & i {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .contact-card-heading {
+            line-height: normal;
+            font-size: 16px;
+            color: $black;
+        }
+        & .contact-card-title {
+            line-height: normal;
+            font-size: 15px;
+            color: lighten($black, 40);
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            & .contact-card-title {
+                color: $theme1;
+            }
+            & .call-icon {
+                & i {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
+// ******* apply page end *******
