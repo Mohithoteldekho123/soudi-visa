@@ -46,14 +46,14 @@ body{
       content: '';
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      left: 0;
+      transform: translate(-50%, -50%);
+      left: 50%;
       height: 13px;
       width: 13px;
       border-radius: 50%;
       border: 3px solid $theme1;
       background-color: $white;
-      animation: headings 4s infinite;  
+      // animation: headings 4s infinite;  
     }
     @keyframes headings {
       0% {
