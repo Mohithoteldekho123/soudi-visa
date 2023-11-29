@@ -199,6 +199,12 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="input-field d-flex flex-column">
+                                <label class="input-label fw-medium">Email</label>
+                                <input type="tel" placeholder="Enter Email" class="form-control shadow-none form-input">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-field d-flex flex-column">
                                 <label class="input-label fw-medium">Nationality</label>
                                 <div class="form-input select-input">
                                     <div class="niceCountryInputSelector bg-white z-2 position-relative h-100" data-selectedcountry="US" data-showspecial="false" data-showflags="true" data-i18nall="All selected"
@@ -224,40 +230,13 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="input-field d-flex flex-column">
-                                <label class="input-label fw-medium">Full Name</label>
-                                <input type="text" placeholder="Enter your name" class="form-control shadow-none form-input">
+                                <label class="input-label fw-medium">Occupation </label>
+                                <input type="text" placeholder="Occupation *" class="form-control shadow-none form-input">
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="input-field d-flex flex-column">
-                                <label class="input-label fw-medium">Full Name</label>
-                                <input type="text" placeholder="Enter your name" class="form-control shadow-none form-input">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="input-field d-flex flex-column">
-                                <label class="input-label fw-medium">Full Name</label>
-                                <input type="text" placeholder="Enter your name" class="form-control shadow-none form-input">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="input-field d-flex flex-column">
-                                <label class="input-label fw-medium">Full Name</label>
-                                <input type="text" placeholder="Enter your name" class="form-control shadow-none form-input">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="input-field d-flex flex-column">
-                                <label class="input-label fw-medium">Full Name</label>
-                                <input type="text" placeholder="Enter your name" class="form-control shadow-none form-input">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="input-field d-flex flex-column">
-                                <label class="input-label fw-medium">Full Name</label>
-                                <input type="text" placeholder="Enter your name" class="form-control shadow-none form-input">
-                            </div>
-                        </div>
+                       <div class="col-md-4">
+                       
+                       </div>
                     </div>
                 </form>
 
@@ -399,17 +378,18 @@
         }
     </script>
 
-<script>
-    function onChangeCallback(ctr){
-        console.log("The country was changed: " + ctr);
-        //$("#selectionSpan").text(ctr);
-    }
+    <script>
+        function onChangeCallback(ctr){
+            console.log("The country was changed: " + ctr);
+            //$("#selectionSpan").text(ctr);
+        }
 
-    $(document).ready(function () {
-        $(".niceCountryInputSelector").each(function(i,e){
-            new NiceCountryInput(e).init();
+        $(document).ready(function () {
+            $(".niceCountryInputSelector").each(function(i,e){
+                new NiceCountryInput(e).init();
+            });
         });
-    });
-</script>
+    </script>
+
 </body>
 </html>

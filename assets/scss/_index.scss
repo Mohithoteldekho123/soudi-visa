@@ -594,16 +594,14 @@
         & .pay-list {
             gap: 10px;
             & .pay-img {
-                // width: 63px;
-                // height: 38px;
             }
         }
     }
     & .social-list {
         gap: 15px;
         & .social-icon {
-            height: 45px;
-            width: 45px;
+            height: 40px;
+            width: 40px;
             font-size: 16px;
             color: $white;
             z-index: 1;
@@ -1066,7 +1064,12 @@
             }
         }
     }
+
+
+    
 }
+
+
 
 
 // ******* apply page end *******
