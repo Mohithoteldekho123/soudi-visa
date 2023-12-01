@@ -676,6 +676,18 @@
             text-decoration: none;
             z-index: 1;
         }
+        & ul {
+            display: flex; 
+            flex-direction: column;
+            gap: 4px;
+        }
+        & p, ul li  {
+            font-size: 15px;
+            line-height: 26px;
+        }
+        & h1, h2 , h3 {
+            font-size: 26px;
+        }
     }
 }
 // visa requirement content section end
@@ -995,6 +1007,9 @@
                 margin-bottom: 6px;
                 font-size: 14px;
                 margin-left: 2px;
+                & span {
+                    color: $red;
+                }
             }
             & .form-input {
                 height: 45px;
@@ -1036,30 +1051,46 @@
                 z-index: 1;
             }
         }
-    }
-    & .select-input {
-        & .niceCountryInputMenu {
-            height: 100%;
-            border-color: lighten($black, 88) !important;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-inline: 8px;
+        & .number-field {
+            & .iti {
+                display: flex;
+                align-items: center;
+                & .iti__flag-container {
+                    position: unset;
+                    height: 45px;
+                    border-right: 1px solid lighten($black, 88);
+                }
+                & .iti__country-list {
+                    width: 100%;
+                }
+            }
         }
-        & .niceCountryInputMenuFilter {
-            background-color: $white;
-            border-inline-color: lighten($black, 88) !important;
-        }
-        & .niceCountryInputMenuDropdownContent {
-            background-color: $white;
-            border-color: lighten($black, 88) !important;
-            border-top: 0;
-            & a {
-                height: 31px;
-
-                &:hover {
-                    background-color: $theme1 !important;
+        & .select-library {
+            & .select2 {
+                height: 45px;
+                width: 100%;
+                & .selection {
+                    height: 100%;
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                }
+                & .select2-selection--single {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    align-items: center;
+                    border-color: lighten($black, 88);
+                    & .select2-selection__rendered {
+                        font-size: 14px;
+                    }
+                    & .select2-selection__arrow {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                & .select2-results__option--highlighted {
+                    background-color: $theme1;
                 }
             }
         }
@@ -1107,12 +1138,6 @@
         }
     }
 }
-// ******* apply page end *******
-
-
-
-
-
 .upload {
     position: relative;
     height: 200px;
@@ -1121,31 +1146,34 @@
     box-shadow: 0 2px 5px rgba(black, .2);
     padding-bottom: 20px;
     background: #fff;
-    animation: fadeup .5s .5s ease both;
-    transform: translateY(20px);
-    opacity: 0;
+    // animation: fadeup .5s .5s ease both;
+    // transform: translateY(20px);
+    // opacity: 0;
     & .upload-header {
       background: $theme1;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       padding-block: 10px;
       text-align: center;
-      & p {
+        & p {
         color: $white;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold;
-        transform: translateX(-20px);
-        opacity: 0;
-        animation: faderight .5s 1.5s ease both;
-        i {
-          transform: translateY(20px);
-          opacity: 0;
-          font-size: 26px;
-          animation: fadeup .5s 1s ease both;
+        // transform: translateX(-20px)
+        // opacity: 0;
+        // animation: faderight .5s 1.5s ease both;
+        // i {
+        //   transform: translateY(20px);
+        //   opacity: 0;
+        //   font-size: 26px;
+        //   animation: fadeup .5s 1s ease both;
+        // }\
         }
-      }
+        & .upload-icon {
+            height: 35px;
+        }
     }
-    .body {
+    & .body {
       text-align: center;
       padding: 10px 0;
       &.hidden {
@@ -1387,5 +1415,148 @@
       width: 100%;
       height: 100%;
     }
-  }
+}
+// ******* apply page end *******
+
+
+// ******* fees page start *******
+.fees-section {
+    .content-main_card {
+        padding: 18px;
+        text-align: center;
+        border-radius:0px;
+        transition: all 0.4s ease-in-out;
+        & .price-card-heading {
+            font-size: 19px;
+            min-height: 40px;
+        }
+        & .price {
+            font-size: 47px;
+            line-height: normal;
+            & .price-title{
+                font-size: 17px ;
+                margin-top:8px ;
+                margin-left: 4px;
+            }
+        }
+        & .price-data {
+            gap: 7px;
+            border: 1px solid lighten($black, 80);
+            padding-block: 9px;
+        }
+        & .duration {
+            font-size: 17px;
+            color: lighten($black , 0);
+            margin-bottom: 8px;
+        }
+        & .price-inner-title {
+            font-size: 14px;
+        }
+        & .check-icon {
+            height: 15px;   
+            max-width: 15px;
+            min-width: 15px;
+            background: $theme1;
+            font-size: 9px;
+            color: $white;
+        }
+        & .price-btn {
+            margin-top: 22px;
+        }
+        &:hover {
+            box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+            transform: translateY(-8px);
+        }
+    }
+    
+}
+// ******* fees page end *******
+
+
+// ******* tour packges page start *******
+.packges-section {
+    & .packges-card {
+        & .packges-img {
+            aspect-ratio: 5/3;
+        }
+        & .packges-card-inner {
+            padding: 10px ;
+        }
+        & .packges-card-heading {
+            & h1 , h2 , h3, h4 ,h5 ,h6 {
+                font-size: 20px;
+            }
+        }
+        & .packges-icons-main {
+            padding: 10px 0;
+            gap: 14px 0;
+            margin-block: 13px;
+        }
+        & .packges-icon-card {
+            & .icon-card-img {
+                height: 25px;
+                width: 25px;
+                & img {
+                    filter: contrast(1);
+                }
+            }
+            & .icon-card-title {
+                font-size: 14px;
+                font-weight:500;
+                line-height: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                // display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                text-transform: capitalize;
+            }
+        }
+        & .packges-icon-card-two::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            background-color: lighten($black, 70);
+        }
+        & .packges-notes {
+            & p {
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+        & .packges-price {
+            left: 10px;
+            bottom: 10px;
+            background-color: $theme1;
+            padding:4px 8px;
+            & h4 {
+                font-size: 18px;
+                color:$white ;
+                margin: 0;
+                line-height: normal;
+            }
+        }
+        & .custom-btn {
+            border: 1px solid $theme1 !important;
+        }
+    }
+}
+// ******* tour packges page end *******
+
+
+// ******* inquery modal start *******
+.inquery-modal {
+    & .inquery-dialog {
+        max-width: 60%;
+
+    }
+}
+// ******* inquery modal end *******
+
+
+
   

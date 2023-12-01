@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fees</title>
     <!-- favicon  -->
     <!-- <link rel="icon" type="image/x-icon" href="assets/img/index/logo2.png"> -->
+    <!-- jquery  -->
+    <script src="assets/js/JQUERY.js"></script>
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <!-- bootstrap css  -->
@@ -14,6 +16,10 @@
     <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css">
      <!-- swiper css  -->
      <link rel="stylesheet" href="assets/libs/swiperjs/css/swiper-bundle.min.css">
+    <!-- select library  -->
+    <link rel="stylesheet" href="assets/libs/selectbox/css/niceCountryInput.css">
+    <!-- select library 2 -->
+    <link rel="stylesheet" href="assets/libs/selectbox/css/intlTelInput.min.css">
 </head>
 <body>
     <!-- scroll to top  -->
@@ -127,7 +133,7 @@
            <div class="d-flex h-100 align-items-center">
             <div class="row w-100">
                 <div class="col-12 page-heading text-center">
-                    Frequently Asked Questions
+                   Fees
                 </div>
                 <div class="d-flex align-items-center justify-content-center mt-4">
                     <a href="apply.html" class="custom-btn fw-medium border-0 overflow-hidden position-relative text-decoration-none">
@@ -148,61 +154,163 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Faq</li>
+                  <li class="breadcrumb-item active" aria-current="page">Fees</li>
                 </ol>
               </nav>
         </div>
     </section>
     <!-- breadcrumb section end -->
-
-    <!-- faq section start  -->
-    <section class="container-fluid gap-section-two faq-section">
+    
+    <!-- fees section start  -->
+    <section class="container-fluid fees-section gap-section">
         <div class="container">
             <div class="heading-section">
-                <div class="heading fw-bold text-center">Frequently Asked Questions                </div>
+                <div class="heading fw-bold text-center">Fees</div>
                 <div class="mx-auto heading-line position-relative "></div>
             </div>
-            <div class="accordion mt-4 faq-inner d-flex flex-column" id="accordionExample">
-                <div class="accordion-item border rounded-2 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button position-relative shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
+            <div class="row mt-4 pt-2">
+                <div class="col-lg-4">
+                    <div class="content-main_card price-card bg-light rounded-2 border shadow-sm">
+                        <h4 class="price-card-heading border-bottom fw-bold">Tourist E-Visa</h4>
+                        <div class="mb-2">
+                            <div class="priceinaed price d-none">USD <small class="usd-cod price-title"> AED </small></div>
+                            <div class="priceingbp price d-flex align-items-start justify-content-center fw-semibold">
+                                165 
+                                <small class="usd-cod price-title fw-medium"> USD </small>
+                                <!-- <small class="usd-cod price-title fw-medium"> £ </small> -->
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Duration of Stay:</b> 1 Year
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Processing Time:</b> 3-4 Working Days
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Visa Rates (GBP):</b> £ 151
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Handling Fee (GBP):</b> £ 29
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Total Rates (GBP):</b> £ 180
+                            </span>
+                        </div>
+                        <div class="price-btn d-flex align-items-center justify-content-center">
+                            <a href="apply.html" class="custom-btn custom-btn-two rounded-5 fw-medium overflow-hidden position-relative">
+                                <span class="position-relative z-1">
+                                    Apply Now
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                     </div>
                 </div>
-                <div class="accordion-item border rounded-2 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button position-relative shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
+                <div class="col-lg-4">
+                    <div class="content-main_card price-card bg-light rounded-2 border ">
+                        <h4 class="price-card-heading border-bottom fw-bold">Umrah (E-Visa)</h4>
+                        <div class="mb-2">
+                            <div class="priceinaed price d-none">USD <small class="usd-cod price-title"> AED </small></div>
+                            <div class="priceingbp price d-flex align-items-start justify-content-center fw-semibold">
+                                165 
+                                <small class="usd-cod price-title fw-medium"> USD </small>
+                                <!-- <small class="usd-cod price-title fw-medium"> £ </small> -->
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Duration of Stay:</b> 1 Year
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Processing Time:</b> 3-4 Working Days
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Visa Rates (GBP):</b> £ 151
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Handling Fee (GBP):</b> £ 29
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Total Rates (GBP):</b> £ 180
+                            </span>
+                        </div>
+                        <div class="price-btn d-flex align-items-center justify-content-center">
+                            <a href="apply.html" class="custom-btn custom-btn-two rounded-5 fw-medium overflow-hidden position-relative">
+                                <span class="position-relative z-1">
+                                    Apply Now
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                     </div>
                 </div>
-                <div class="accordion-item border rounded-2 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button position-relative shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
+                <div class="col-lg-4">
+                    <div class="content-main_card price-card bg-light rounded-2 border content-main_card_two">
+                        <h4 class="price-card-heading border-bottom fw-bold">Family Visit Visa</h4>
+                        <div class="mb-2">
+                            <div class="priceinaed price d-none">USD <small class="usd-cod price-title"> AED </small></div>
+                            <div class="priceingbp price d-flex align-items-start justify-content-center fw-semibold">
+                                165 
+                                <small class="usd-cod price-title fw-medium"> USD </small>
+                                <!-- <small class="usd-cod price-title fw-medium"> £ </small> -->
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Duration of Stay:</b> 1 Year
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Processing Time:</b> 3-4 Working Days
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Visa Rates (GBP):</b> £ 151
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Handling Fee (GBP):</b> £ 29
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center price-data border-end-0 border-start-0 border-top-0">
+                            <span class="check-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check"></i></span>
+                            <span class="price-inner-title"><b class="fw-semibold"> Total Rates (GBP):</b> £ 180
+                            </span>
+                        </div>
+                        <div class="price-btn d-flex align-items-center justify-content-center">
+                            <a href="apply.html" class="custom-btn custom-btn-two rounded-5 fw-medium overflow-hidden position-relative">
+                                <span class="position-relative z-1">
+                                    Apply Now
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                     </div>
                 </div>
-              </div>
+            </div>
         </div>
     </section>
-    <!-- faq section end  -->
+    <!-- fees section end -->
 
     <!-- footer start  -->
     <footer class="container-fluid footer-section gap-section position-relative">
@@ -320,30 +428,36 @@
     <script src="assets/js/main.js"></script>
     <!-- swiper js  -->
     <script src="assets/libs/swiperjs/js/swiper-bundle.min.js"></script>
+    <!-- select library  -->
+    <script src="assets/libs/selectbox/js/niceCountryInput.js"></script>
+    <!-- select library 2 -->
+    <script src="assets/libs/selectbox/js/intlTelInput.min.js"></script>
 
-    <!-- slider  -->
+
+
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            scrollbar: {
-                el: ".swiper-scrollbar",
-                hide: true,
-            },
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+  
+          utilsScript: "build/js/utils.js"
         });
     </script>
 
-    <script>
-        var swiper = new Swiper(".testimonal", {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+    
+
+      <script>
+        function onChangeCallback(ctr){
+            console.log("The country was changed: " + ctr);
+            //$("#selectionSpan").text(ctr);
+        }
+
+        $(document).ready(function () {
+            $(".niceCountryInputSelector").each(function(i,e){
+                new NiceCountryInput(e).init();
+            });
         });
     </script>
+
+
 </body>
 </html>
